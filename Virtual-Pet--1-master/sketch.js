@@ -1,12 +1,13 @@
 var dog,Happydog,database,foodS,foodStock,dog1,dog2;
 var feed, addFood;
-var fedTime, lastFed;
+var fedTime, lastFed,bg;
 var foodObj;
 
 function preload()
 {
 	 dog1=loadImage("images/Dog.png");
    dog2=loadImage("images/happydog.png");
+	bg = loadImage("images/bg.png");
 }
 
 function setup() {
@@ -32,7 +33,7 @@ function setup() {
 
 
 function draw() {  
-background(46, 139, 87);
+background(bg);
 
 foodObj.display();
 
